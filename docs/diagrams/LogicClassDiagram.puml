@@ -1,0 +1,61 @@
+@startuml LogicClassDiagram
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+package logic {
+    package parser {
+        Interface Parser <<Interface>>
+        Class RecipeBookParser
+        Class XYZCommandParser
+        Class CliSyntax
+        Class ParserUtil
+        Class ArgumentMultimap
+        Class ArgumentTokenizer
+        Class Prefix
+    }
+
+    package command {
+        Class XYZCommand
+        Class CommandResult
+        Class "{abstract}\nCommand" as Command
+    }
+
+    Interface Logic <<Interface>>
+    Class LogicManager
+}
+
+package model {
+    Class HiddenModel #FFFFFF
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> Logic
+
+LogicManager .up.|> Logic
+LogicManager -->"1" RecipeBookParser
+RecipeBookParser .left.> XYZCommandParser: creates >
+
+XYZCommandParser ..> XYZCommand : creates >
+XYZCommandParser ..|> Parser
+XYZCommandParser ..> ArgumentMultimap
+XYZCommandParser ..> ArgumentTokenizer
+ArgumentTokenizer .left.> ArgumentMultimap
+XYZCommandParser ..> CliSyntax
+CliSyntax ..> Prefix
+XYZCommandParser ..> ParserUtil
+ParserUtil .down.> Prefix
+ArgumentTokenizer .down.> Prefix
+XYZCommand -up-|> Command
+LogicManager .left.> Command : executes >
+
+LogicManager --> model
+Command -right-> model
+note right of XYZCommand: XYZCommand = ""/new"" , ""/modify"", ""/list"", etc
+
+Logic ..> CommandResult
+LogicManager .down.> CommandResult
+Command .up.> CommandResult
+CommandResult -[hidden]-> Parser
+@enduml

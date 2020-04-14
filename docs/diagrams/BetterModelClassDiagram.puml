@@ -1,0 +1,23 @@
+@startuml BetterModelClassDiagram
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor MODEL_COLOR
+skinparam classBackgroundColor MODEL_COLOR
+
+RecipeBook *-right-> "1" UniqueRecipeList
+RecipeBook *-right-> "1" UniqueTagList
+UniqueTagList -[hidden]down- UniqueRecipeList
+UniqueTagList -[hidden]down- UniqueRecipeList
+
+UniqueTagList *-right-> "*" Tag
+UniqueRecipeList o-right-> Recipe
+
+Recipe o-up-> "*" Tag
+
+Recipe *--> Name
+Recipe *--> IngredientList
+Recipe *--> InstructionList
+Recipe *--> Calorie
+Recipe *--> Serving
+Recipe *--> Rating
+@enduml

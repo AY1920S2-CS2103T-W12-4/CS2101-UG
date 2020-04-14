@@ -1,0 +1,56 @@
+= About Us
+:site-section: AboutUs
+:relfileprefix: team/
+:imagesDir: images
+:stylesDir: stylesheets
+
+CookBuddy - This recipe managing application was developed by the https://github.com/AY1920S2-CS2103T-W12-4/main[AY1920S2-CS2103T-W12-4] team. +
+
+We are a team based in the http://www.comp.nus.edu.sg[School of Computing, National University of Singapore].
+
+== Project Team
+
+=== Adarsh Mohandas Chugani
+image::adarshchugani.png[width="150", align="left"]
+{empty}[https://github.com/AdarshChugani[github]] [<<adarshchugani#, portfolio>>]
+
+Role: Team Lead +
+Responsibilities: UI
+
+'''
+
+'''
+
+=== Kevin Sum
+image::kevinswk94.png[width="150", align="left"]
+{empty}[https://github.com/kevinswk94[github]] [<<kevinswk94#, portfolio>>]
+
+Role: Developer +
+Responsibilities: Dev Ops
+
+'''
+=== Qi Mingsi
+image::e0316059.png[width="150", align="left"]
+{empty}[http://github.com/e0316059[github]] [<<e0316059#, portfolio>>]
+
+Role: Developer +
+Responsibilities: UI
+
+'''
+
+=== Sharadh Rajaraman
+image::sharadhr.png[width="150", align="left"]
+{empty}[http://github.com/sharadhr[github]] [<<sharadhr#, portfolio>>]
+
+Role: Developer +
+Responsibilities: Documentation
+
+'''
+
+=== Zain Alam
+image::muhd97.png[width="150", align="left"]
+{empty}[https://github.com/muhd97[github]] [<<muhd97#, portfolio>>]
+
+Role: Developer +
+Responsibilities: Data
+

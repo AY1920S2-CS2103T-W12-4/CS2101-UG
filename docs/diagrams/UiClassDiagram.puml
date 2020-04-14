@@ -1,0 +1,60 @@
+@startuml UiClassDiagram
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor UI_COLOR_T4
+skinparam classBackgroundColor UI_COLOR
+
+package UI {
+    Interface Ui <<Interface>>
+    Class "{abstract}\nUiPart" as UiPart
+    Class UiManager
+    Class MainWindow
+    Class HelpWindow
+    Class ResultDisplay
+    Class RecipeListPanel
+    Class RecipeCard
+    Class StatusBarFooter
+    Class CommandBox
+}
+
+package Model {
+    Class HiddenModel #FFFFFF
+}
+
+package Logic {
+    Class HiddenLogic #FFFFFF
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> Ui
+
+UiManager .left.|> Ui
+UiManager -down-> MainWindow
+MainWindow --> HelpWindow
+MainWindow *-down-> CommandBox
+MainWindow *-down-> ResultDisplay
+MainWindow *-down-> RecipeListPanel
+MainWindow *-down-> StatusBarFooter
+
+RecipeListPanel -down-> RecipeCard
+
+MainWindow -left-|> UiPart
+
+ResultDisplay --|> UiPart
+CommandBox --|> UiPart
+RecipeListPanel --|> UiPart
+RecipeCard --|> UiPart
+StatusBarFooter --|> UiPart
+HelpWindow -down-|> UiPart
+
+RecipeCard ..> Model
+UiManager -right-> Logic
+MainWindow -left-> Logic
+
+RecipeListPanel -[hidden]left- HelpWindow
+HelpWindow -[hidden]left- CommandBox
+CommandBox -[hidden]left- ResultDisplay
+ResultDisplay -[hidden]left- StatusBarFooter
+
+MainWindow -[hidden]-|> UiPart
+@enduml
