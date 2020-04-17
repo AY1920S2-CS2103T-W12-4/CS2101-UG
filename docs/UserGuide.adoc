@@ -61,9 +61,7 @@ This block displays steps that you should exercise with *caution*.
 // tag::QuickStart[]
 == Quick Start
 
-This section will serve to explain the step-by-step guide on how to install the application into your Computer.
-
-Please follow the steps below on getting started with CookBuddy.
+This section will walk you through installing *CookBuddy* on your computer.
 
 . Ensure you have Java 11 or later installed on your computer.
 - If not, download and install the latest Java Runtime Environment from https://www.java.com/en/download/[here].
