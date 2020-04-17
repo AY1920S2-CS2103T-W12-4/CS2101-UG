@@ -104,7 +104,7 @@ adds a recipe named "Ham Sandwich" to *CookBuddy*.
 This section teaches you on how to interpret *CookBuddy’s* GUI.
 
 [caption=]
-.User Interface of CookBuddy
+.User Interface of *CookBuddy*
 image::user-guide/ui-components.png[width="600"]
 
 As shown in the above diagram, there are four major components that you will be interacting with in *CookBuddy's* interface, which will be referenced in the upcoming sections.
@@ -579,7 +579,7 @@ Example: You can type `count` and *CookBuddy* will display the total number of r
 *Expected Outcome*
 
 [caption=]
-.1) You want to count the total number of `recipes` in CookBuddy
+.1) You want to count the total number of `recipes` in *CookBuddy*
 image::user-guide/count-before.png[width="600"]
 
 [caption=]
