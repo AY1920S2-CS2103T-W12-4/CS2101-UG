@@ -7,6 +7,7 @@
 :imagesDir: images
 :stylesDir: stylesheets
 :xrefstyle: full
+:icons: font
 :experimental:
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -19,29 +20,27 @@ By: `AY1920S2-CS2103T-W12-4`      Since: `Feb 2020`      Licence: `MIT`
 
 == Introduction
 
-=== Product Information [Done by Zain Alam]
+=== Product Information [Done by: Zain Alam]
 
-Greetings, and welcome to CookBuddy!
+Greetings, and welcome to *CookBuddy*!
 
 Looking for an all-in-one solution to manage your recipe? Look no further!
 
 *CookBuddy* is an integrated platform fully customized for users with the aim of helping you manage your recipes effectively. The application allows you to keep track of your recipes.
 It looks like you will never have to worry about finding your recipe anymore!
 
-CookBuddy uses a graphical user interface (GUI) to display your recipes, while allowing interaction using text, which is optimised for users familiar with the command-line, and are fast typists.
+*CookBuddy* uses a graphical user interface (GUI) to display your recipes, while allowing interaction using text, which is optimised for users familiar with the command-line, and are fast typists.
 
-If you are looking for a way to easily manage your recipes and have quick fingers, then CookBuddy is definitely for you!
+If you are looking for a way to easily manage your recipes and have quick fingers, then *CookBuddy* is definitely for you!
 
 Interested?
 Proceed to <<Quick Start>> to get started!
 
 === How to navigate this User Guide
 
-This user guide provides documentation on CookBuddy such as a quick start guide and an overview of its features for you to fully utilise CookBuddy.
+This user guide provides documentation on *CookBuddy* such as a quick start guide and an overview of its features for you to fully utilise *CookBuddy*.
 
-If you want to find out more about CookBuddy's features and commands, you can go to the <<Features>> section.
-
-If you need an overview regarding the usage of CookBuddy's commands, head on to the <<Command Summary>> section.
+If you want to find out more about *CookBuddy's* features and commands, you can go to the <<Features>> section.
 
 Throughout this guide, you may come across a few symbols.
 They are used to draw your attention to important or note-worthy information.
@@ -80,12 +79,12 @@ image::Ui.png[width="790"]
 
 . Some example commands you can try:
 
-   * `list` : lists all the recipes stored in CookBuddy.
+   * `list` : lists all the recipes stored in *CookBuddy*.
 
    * `new n/Ham Sandwich ing/bread, 2 slices; ham, 1 slice ins/put ham between bread; serve on plate`:
     adds a recipe named "Ham Sandwich" to *CookBuddy*.
 
-   * `delete 3` : deletes the 3rd recipe shown in the current list from CookBuddy.
+   * `delete 3` : deletes the 3rd recipe shown in the current list from *CookBuddy*.
 
    * `exit` : quits *CookBuddy*.
 
@@ -93,12 +92,12 @@ image::Ui.png[width="790"]
 
 // end::QuickStart[]
 
-== Understanding CookBuddy’s GUI [Done by Zain Alam]
+== Understanding CookBuddy’s GUI [Done by: Zain Alam]
 
 This section teaches you on how to utilise *CookBuddy’s* GUI.
 
 [caption=]
-.The different components of CookBuddy's GUI
+.The different components of *CookBuddy's* GUI
 image::user-guide/ui-components.png[width="600"]
 
 There are four major components that you will be using in *CookBuddy* as seen in the diagram above and will be referenced in the upcoming sections.
@@ -132,7 +131,7 @@ The following sub-sections describes the features you can use in *CookBuddy*.
 [CAUTION]
 Please follow the format specified *strictly* and carefully.
 
-=== Command History [Done by Kevin]
+=== Command History [Done by: Kevin]
 
 You can view previously entered commands with kbd:[Page Up] and kbd:[Page Down].
 
@@ -168,7 +167,7 @@ A separate help window will appear with details on the delete command's usage.
 image::user-guide/helpwindowdelete.png[width="600"]
 
 // tag::AddRecipe[]
-=== Adding a recipe — `new` [Done by Kevin]
+=== Adding a recipe — `new` [Done by: Kevin]
 You can add a new recipe to *CookBuddy* using the `new` command.
 
 [NOTE]
@@ -221,7 +220,7 @@ Format: `view INDEX`
 
 [NOTE]
 ====
-`INDEX` must be a positive integer value, within the range of the number of recipes in your CookBuddy.
+`INDEX` must be a positive integer value, within the range of the number of recipes in *CookBuddy*.
 ====
 
 Example: You can type `view 2` and *CookBuddy* will display you the recipe at index 2 on the main page.
@@ -254,7 +253,7 @@ Example: You can type `time 1 00:10:00` and *CookBuddy* will assign the recipe a
 *Expected Outcome*
 
 [caption=]
-.1) You want to assign the first `recipe` in CookBuddy a timing of 10 minutes.
+.1) You want to assign the first `recipe` in *CookBuddy* a timing of 10 minutes.
 image::user-guide/timecommand-before.png[width="600"]
 
 [caption=]
@@ -271,7 +270,7 @@ Example: You can type `delete 1` and *CookBuddy* will delete the recipe at index
 
 [NOTE]
 ====
-* `INDEX` must be a positive integer value, within the range of the number of recipes in *CookBuddy*.
+`INDEX` must be a positive integer value, within the range of the number of recipes in *CookBuddy*.
 ====
 
 *Expected Outcome*
@@ -287,7 +286,7 @@ image::user-guide/delete-after.png[width="600"]
 [IMPORTANT]
 ====
 This command cannot be undone. Once a `recipe` has been deleted, its respective data entry in the save file will be permanently deleted.
-+
+
 
 //See <<data-storage>> for more details.
 //
@@ -317,7 +316,7 @@ the list to contain 2 slices of ham.
 //*Expected Outcome*
 //
 //[caption=]
-//.1) You want to modify the `recipe ingredients` in your CookBuddy
+//.1) You want to modify the `recipe ingredients` in *CookBuddy*
 //image::user-guide/modifyingredient-before.png[width="600"]
 //
 //[caption=]
@@ -412,7 +411,7 @@ Format: `unfav INDEX`
 
 [NOTE]
 ====
-* `INDEX` must be a positive integer value, within range of the number of recipes in your CookBuddy.
+* `INDEX` must be a positive integer value, within range of the number of recipes in *CookBuddy*.
 * Recipes are not favourited by default.
 * This command is only useful if you wish to un-favourite a recipe that is already favourited.
 * A non-favourited recipe is indicated by a heart with a read outline and no fill.
@@ -440,7 +439,7 @@ Format: `done INDEX`
 
 [NOTE]
 ====
-* `INDEX` must be a positive integer value, within the range of the number of recipes in your CookBuddy.
+* `INDEX` must be a positive integer value, within the range of the number of recipes in *CookBuddy*.
 
 ====
 
@@ -468,7 +467,7 @@ Format: `undo INDEX`
 
 [NOTE]
 ====
-* `INDEX` must be a positive integer value, within range of the number of recipes in your CookBuddy.
+* `INDEX` must be a positive integer value, within range of the number of recipes in *CookBuddy*.
 * Recipes are marked as not attempted by default.
 * This command is only useful if you wish to un-mark recipe that is already marked as done.
 ====
@@ -506,7 +505,7 @@ Example: You can type `list` and *CookBuddy* will display all the recipes that a
 //image::user-guide/modifytag-after.png[width="600"]
 
 // tag::FindRecipe[]
-=== Finding recipes — `find` [Done by Kevin]
+=== Finding recipes — `find` [Done by: Kevin]
 You can find an existing recipe with a particular attribute from *CookBuddy* using the `find` command.
 
 Format: `find [n/NAME [...]]` +
@@ -610,9 +609,9 @@ Format: `exit`
 
 Example: You can type `exit` and *CookBuddy* will terminate.
 
-== Configuration and Recipe Data [Sharadh]
+== Configuration and Recipe Data [Done by: Sharadh]
 === Configuration
-CookBuddy may be easily configured, by editing the key-value pairs in `preferences.json`, which is automatically created at the same folder where the CookBuddy `jar` file is. The key-value pairs are detailed in <<configoptions>>.
+*CookBuddy* may be easily configured, by editing the key-value pairs in `preferences.json`, which is automatically created at the same folder where the CookBuddy `jar` file is. The key-value pairs are detailed in <<configoptions>>.
 
 [[configoptions]]
 [options="header",width=700]
@@ -632,9 +631,9 @@ The recipe data is stored in the specified path above, as _another_ `.json` file
 
 [WARNING]
 ====
-Do *_not_* edit the `recipebook.json` file by hand, nor delete any lines from the file. CookBuddy may fail to read the file and may crash, or worse, overwrite the file with placeholder data.
+Do *_not_* edit the `recipebook.json` file by hand, nor delete any lines from the file. *CookBuddy* may fail to read the file and may crash, or worse, overwrite the file with placeholder data.
 
-The file may be copied out elsewhere for editing, but adhere strictly to the format as written out by CookBuddy.
+The file may be copied out elsewhere for editing, but adhere strictly to the format as written out by *CookBuddy*.
 ====
 
 === Image data
@@ -645,7 +644,7 @@ Each recipe's image is stored as a `.png` file in the pecified folder, with the 
 // tag::FutureStuff[]
 == Coming in v2.0 [Done by: Adarsh Chugani]
 
-Look forward to these features coming up in version 2.0 of CookBuddy!
+Look forward to these features coming up in version 2.0 of *CookBuddy*!
 
 
 === Adding price *(coming in v2.0)*: `price`
@@ -732,7 +731,7 @@ Exports the recipes from cookbuddy into the given path
 
 Example: export "/docs/"
 
-This would export the recipes from CookBuddy into a file in the docs folder.
+This would export the recipes from *CookBuddy* into a file in the docs folder.
 
 
 
@@ -771,7 +770,7 @@ This would share the recipe at index 1 on the user's facebook account.
 
 
 
-== FAQ [Done by Zain Alam]
+== FAQ [Done by: Zain Alam]
 
 The following section answers some questions you might have regarding *CookBuddy*.
 
@@ -804,7 +803,7 @@ command. The backup feature will be released soon in the near future.
 *Q: *CookBuddy* is not working on my computer. How do I fix it?* +
 *A*: Ensure that your computer is running on Java 11 and not other versions. *CookBuddy* does not support other versions of Java.
 
-== Command Summary [Done by Zain Alam]
+== Command Summary [Done by: Zain Alam]
 
 The following section gives a quick summary of all the commands you can use in CookBuddy arranged in an alphabetical order in the table below.
 
@@ -832,7 +831,7 @@ The following section gives a quick summary of all the commands you can use in C
 
 |==============
 
-== Glossary [Done by Zain Alam]
+== Glossary [Done by: Zain Alam]
 This section will cover and explain certain technical/CookBuddy specific terms used in this user guide in the table below.
 
 .Explanation of various terms used in this user guide.
