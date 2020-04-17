@@ -776,16 +776,16 @@ This would share the recipe at index 1 on the user's facebook account.
 
 The following section answers some questions you might have regarding *CookBuddy*.
 
-*Q: Is *CookBuddy* safe to use?* +
+*Q: Is CookBuddy safe to use?* +
 *A*: Yes, *CookBuddy* is safe to use. We regularly review our code to ensure that there are no vulnerabilities for hackers to exploit.
 
-*Q: Is *CookBuddy* secure?* +
+*Q: Is CookBuddy secure?* +
 *A*: Yes, *CookBuddy* is secure. Your data is stored only on your computer. No data is sent to any online server.
 
-*Q: Do I need an Internet connection to use *CookBuddy*?* +
+*Q: Do I need an Internet connection to use CookBuddy?* +
 *A*: No. *CookBuddy* works 100% offline.
 
-*Q: Will *CookBuddy* receive updates?* +
+*Q: Will CookBuddy receive updates?* +
 *A*: Yes. We are a dedicated team of software developers who are constantly collating feedback and running tests on the app. We are also working towards delivering additional features for our users.
 
 *Q: Can I use CookBuddy on a mobile device?* +
@@ -794,15 +794,15 @@ The following section answers some questions you might have regarding *CookBuddy
 *Q: How do I transfer my data to another Computer?* +
 *A*: Download the jar in the other computer and copy the entire data folder over to the same directory. Run *CookBuddy* and update the preferences.json if necessary.
 
-*Q: Can I edit my data folder of *CookBuddy* which contains the information regarding my recipes?* +
+*Q: Can I edit my data folder of CookBuddy which contains the information regarding my recipes?* +
 *A*: No. Please do not modify the data folder of *CookBuddy*. All modifications of the recipes should be done through the `modify`
 command only.
 
-*Q: How do I retrieve back all the recipes in *CookBuddy* if I accidentally reset *CookBuddy*?* +
+*Q: How do I retrieve back all the recipes in CookBuddy if I accidentally reset CookBuddy?* +
 *A*: Right now *CookBuddy* does not support a backup feature. Thus, it would be best if you do not accidentally use the `reset`
 command. The backup feature will be released soon in the near future.
 
-*Q: *CookBuddy* is not working on my computer. How do I fix it?* +
+*Q: CookBuddy is not working on my computer. How do I fix it?* +
 *A*: Ensure that your computer is running on Java 11 and not other versions. *CookBuddy* does not support other versions of Java.
 
 == Command Summary [Done by: Zain Alam]
