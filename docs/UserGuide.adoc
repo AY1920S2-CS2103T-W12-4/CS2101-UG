@@ -212,7 +212,7 @@ Format: `view INDEX`
 `INDEX` must be a positive integer value, within the range of the number of recipes in your CookBuddy.
 ====
 
-Example: You can type `view 2` and *CookBuddy* will display you the recipe at index 2 on the main page  as shown in the diagrams below..
+Example: You can type `view 2` and *CookBuddy* will display you the recipe at index 2 on the main page  as shown in the diagrams below.
 
 *Expected Outcome*
 
