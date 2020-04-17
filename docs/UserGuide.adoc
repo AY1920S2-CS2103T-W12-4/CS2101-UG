@@ -613,7 +613,7 @@ Format: `exit`
 
 Example: You can type `exit` and *CookBuddy* will terminate.
 
-== Configuration and Recipe Data [Sharadh]
+== Configuration and Recipe Data [Done by: Sharadh]
 === Configuration
 CookBuddy may be easily configured, by editing the key-value pairs in `preferences.json`, which is automatically created at the same folder where the CookBuddy `jar` file is. The key-value pairs are detailed in <<configoptions>>.
 
